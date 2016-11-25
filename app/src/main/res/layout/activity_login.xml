@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nedtech.kipapp.LoginActivity"
+    android:background="#ba68c8">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="@string/app_name"
+        android:id="@+id/name_app"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textColor="#ffffff"
+        android:text="@string/logo2_app"
+        android:id="@+id/name2_app"
+        android:layout_below="@+id/name_app"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:hint="@string/email"
+        android:textColorHint="@android:color/white"
+        android:textColor="#ffffff"
+        android:backgroundTint="@color/colorEditText"
+        android:layout_above="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_alignRight="@+id/Login"
+        android:layout_alignEnd="@+id/Login" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:hint="@string/pwd"
+        android:textColorHint="@android:color/white"
+        android:textColor="#ffffff"
+        android:backgroundTint="@color/colorEditText"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/Login"
+        android:layout_alignStart="@+id/Login"
+        android:layout_alignRight="@+id/Login"
+        android:layout_alignEnd="@+id/Login"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_login"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:id="@+id/Login"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:clickable="true"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Register"
+        android:id="@+id/register"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/logo_app"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/name2_app"
+        android:layout_alignStart="@+id/name2_app"
+        android:layout_marginTop="38dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Need help?"
+        android:id="@+id/help"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+</RelativeLayout>
